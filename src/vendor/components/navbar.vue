@@ -13,18 +13,18 @@
                 </button>
             </div>
             <div class="collapse navbar-collapse" id="navbar_collapse">
+                <ul class="nav navbar-nav navbar-left">
+                    <li><a href="#">item 1</a></li>
+                    <li><a href="#">item 2</a></li>
+                    <li><a href="#">item 3</a></li>
+                    <li><a href="#">item 4</a></li>
+                    <li><a href="#">item 5</a></li>
+                    <li><a href="#">item 6</a></li>
+                </ul>
                 <ul class="nav navbar-nav navbar-right">
-
-                    <li v-if="!online" @click.prevent="nop">
-                        <a href="#">未登录</a>
-                    </li>
-
-                    <li v-if="online" @click.prevent="nop">
-                        <a href="#">{{username}}</a>
-                    </li>
-                    <li v-if="online" @click.prevent="logout">
-                        <a href="#"><span class="text-danger">退出</span></a>
-                    </li>
+                    <li><a href="#">right 1</a></li>
+                    <li><a href="#">right 2</a></li>
+                    <li><a href="#">right 3</a></li>
                 </ul>
             </div>
         </div>
@@ -33,35 +33,16 @@
 <script>
     export default
         {
-            data: function () {
+            data: function ()
+            {
                 return {
-
                 };
-            },
-            computed:
-                {
-                    online: function()
-                    {
-                        return this.$store.state.user.online;
-                    },
-                    username: function()
-                    {
-                        return this.$store.state.user.uid;
-                    }
-                },
-            methods:
-                {
-                    logout: function()
-                    {
-                        this.$store.commit('user/logout');
-                    },
-                    nop: function()
-                    {
-                        console.log('nop');
-                    }
-                }
+            }
         }
 </script>
 <style scoped>
-
+    .navbar
+    {
+        border-radius: 0;
+    }
 </style>

@@ -1,7 +1,7 @@
 const pages =
     [
         '',
-        'page1/',
+        'example/',
     ];
 
 module.exports = pages;

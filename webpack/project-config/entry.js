@@ -1,7 +1,7 @@
 const entry =
     {
-        '/': './src/pages/index/entry.js',
-        'page1': './src/pages/page1/entry.js',
+        'index': './src/pages/index/entry.js',
+        'example': './src/pages/example/entry.js',
     };
 
 module.exports = entry;

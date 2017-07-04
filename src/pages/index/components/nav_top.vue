@@ -6,12 +6,12 @@
 <script>
     export default
     {
-        data: function ()
-        {
+        data: function () {
             return {};
         },
         components: {}
     }
 </script>
 <style scoped>
+
 </style>
