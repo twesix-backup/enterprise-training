@@ -1,14 +1,22 @@
 <template>
     <div class="container-fluid">
-        <div id="classes" class="col-sm-6 col-sm-offset-3">
-            <img src="../../../vendor/img/0813-circle.png" alt="0813 circle">
-            <h2>四大课程品类</h2>
-            <p>做眼未来,全面提升大学生核心竞争力</p>
-            <div id="class-items">
-                <span class="class-item">创新创业</span><!--
-                --><span class="class-item">互联网+</span><!--
-                --><span class="class-item">职前教育</span><!--
-                --><span class="class-item">通时素养</span>
+        <div class="row">
+            <div id="classes" class="col-xs-6 col-xs-offset-3">
+                <img src="../../../vendor/img/0813-circle.png" alt="0813 circle">
+                <div class="content-bottom">
+                    <h2>四大课程品类</h2>
+                    <p>做眼未来,全面提升大学生核心竞争力</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-8 col-xs-offset-2" id="classes_buttons">
+                <div class="btn-group">
+                    <button type="button" class="btn btn-default">创新创业</button>
+                    <button type="button" class="btn btn-default">互联网+</button>
+                    <button type="button" class="btn btn-default">职前教育</button>
+                    <button type="button" class="btn btn-default">通时素养</button>
+                </div>
             </div>
         </div>
     </div>
@@ -30,36 +38,31 @@
         padding: 30px;
         margin: 0;
     }
+    #classes
+    {
+        position: relative;
+        text-align: center;
+    }
     img
     {
         float: right;
     }
-    h2
+    .content-bottom
     {
-        margin-top: 90px;
+        position: absolute;
+        right: 150px;
+        bottom: 0;
+    }
+    #classes_buttons
+    {
         text-align: center;
     }
-    p
+    .btn-group
     {
-        text-align: center;
+        margin-top: 30px;
     }
-    #class-items
+    .btn-group > button
     {
-        padding-left: 0;
-        margin-top: 40px;
-    }
-    .class-item
-    {
-        padding: 10px;
-        margin-left: 1px;
-        background-color: white;
-    }
-    #class-items .class-item:first-child
-    {
-        border-radius: 5px 0 0 5px;
-    }
-    #class-items .class-item:last-child
-    {
-        border-radius: 0 5px 5px 0;
+        padding: 10px 40px;
     }
 </style>
