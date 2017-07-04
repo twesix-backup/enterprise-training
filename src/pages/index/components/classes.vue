@@ -34,9 +34,9 @@
 <style scoped>
     .container-fluid
     {
-        background-color: darkgray;
-        padding: 30px;
+        background-color: #eff4f7;
         margin: 0;
+        padding: 30px 30px 100px;
     }
     #classes
     {

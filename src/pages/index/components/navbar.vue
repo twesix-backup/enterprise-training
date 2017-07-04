@@ -13,7 +13,7 @@
         <div class="nav-right">
             <button id="download_app">APP下载</button>
             <button class="btn btn-sm btn-primary">登录</button>
-            <button class="btn btn-sm btn-info">注册</button>
+            <button class="btn btn-sm btn-info"><a href="register" target="_blank">注册</a></button>
         </div>
     </nav>
 </template>
@@ -52,7 +52,7 @@
     {
         display: inline;
         list-style: none;
-        padding: 5px;
+        padding: 10px;
         cursor: pointer;
         border-radius: 3px;
     }

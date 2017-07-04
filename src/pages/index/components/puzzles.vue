@@ -101,6 +101,7 @@
     .container-fluid
     {
         margin: 0;
+        background-color: #eff4f7;
     }
     *
     {
