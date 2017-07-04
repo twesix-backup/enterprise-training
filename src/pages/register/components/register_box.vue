@@ -40,8 +40,8 @@
                     <br>
                     <br>
                     <div id="boy">
-                        <img src="../../../vendor/img/handcode.png" alt="hand">
-                        <img src="../../../vendor/img/health.png" alt="body">
+                        <div><img id="boy_hand" src="../../../vendor/img/handcode.png" alt="hand"></div>
+                        <div><img id="boy_body" src="../../../vendor/img/health.png" alt="body"></div>
                     </div>
                     <img src="../../../vendor/img/code.png" alt="code">
                     <br>
@@ -77,7 +77,7 @@
         width: 60%;
         padding: 30px;
         background-color: white;
-        box-shadow: 3px 3px 10px #eff4f7;
+        box-shadow: 0 0 10px #e1e6e9;
     }
     #title_image
     {
@@ -85,17 +85,24 @@
     }
     #title_text
     {
-        padding-left: 10px;
+        padding-left: 25px;
         border-left: 1px solid grey;
         font-size: 16px;
-        line-height: 30px;
+        line-height: 50px;
         display: inline-block;
     }
     .long-input-box
     {
         width: 100%;
         padding: 10px;
+    }
+    input
+    {
         font-size: 20px;
+    }
+    select
+    {
+        font-size: 25px;
     }
     #forget,
     #register
@@ -129,10 +136,21 @@
         height: 110px;
         width: 100%;
     }
+    #boy div
+    {
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        text-align: center;
+    }
     #boy img
     {
         width: 100px;
-        position: absolute;
-        bottom: 0;
+    }
+    #boy_body
+    {
+        position:relative;
+        left: 7px;
     }
 </style>
