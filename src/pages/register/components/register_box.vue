@@ -16,10 +16,12 @@
                         </select>
                         <br>
                         <br>
-                        <input class="long-input-box" type="text" placeholder="请输入手机号/邮箱/学号">
+                        <input v-model="account" class="long-input-box" type="tel" title="请输入正确的电话号码"
+                               pattern="^1[34578]\d{9}$"
+                               placeholder="请输入手机号/邮箱/学号">
                         <br>
                         <br>
-                        <input class="long-input-box" type="text" placeholder="请输入密码">
+                        <input v-model="password" class="long-input-box" type="text" placeholder="请输入密码" required>
                         <br>
                         <br>
                         <br>
@@ -59,14 +61,16 @@
     {
         data: function () {
             return {
-                school: null
+                school: null,
+                account: null,
+                password: null,
             };
         },
         methods:
             {
                 submit: function()
                 {
-                    alert('表单提交了');
+                    alert(`表单提交了\n电话号码： ${this.account}\n密码： ${this.password}`);
                 }
             }
     }
